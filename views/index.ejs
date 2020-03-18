@@ -4,6 +4,7 @@
     <% include layouts/header %>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <style>
+
       .main-card {
         min-height: 640px;
       }
@@ -38,8 +39,10 @@
       .imageBox{
         width:100%;
         height:240px;
-        background-color:#F5F5F5;
+        background-color:#FFFFFF;
       }
+      .imageBoxLatest{
+width:100px;      }
     </style>
   </head>
 
@@ -47,20 +50,56 @@
     <% include layouts/navbar %>
     <div class="container-fluid feature-area d-none d-md-block">
       <div class="container">
-        <div class="row" style="margin:20px 0px;">
+        <div class="row" style="margin:30px 0px;">
           <div class="col-md-5">
             <div class="imageBox text-center">
               <img src="https://www.recordnepal.com/wp-content/uploads/2020/03/coronavirus-threatening-the-whole-world.jpeg" alt="" style="max-width: 100%;max-height: 100%;">
           </div>
           </div>
           <div class="col-md-4">
-          
+            <p class="newsCategory">WEEK IN POLITICS</p>
+            <p class="readingTime">5 min read</p>
+            <h1 style="margin-top:0px;">Govt. fumbling over Corona, Oli discharged, ride-sharing ban overturned, Nepal pro nuclear exploration and trade, a bolstered Right</h1>
+            <img src="img/circle.svg" class=""/>
+            <p class="author d-inline">The Record - <span class="date">March 15, 2020</span></p>
+
           </div>
           <div class="col-md-3">
             <img src="img/become-a-member.png" alt="become a member"/>
           </div>
         </div>
         <hr>
+        <div class="row">
+          <div class="col-md-12">
+            <h1 style="margin-top: 0px;">LATEST <img src="img/arrow.png" style="margin-left:10px;display: inline;"/></h1>
+          </div>
+          <div class="col-md-4">
+            <div class="media">
+              <div class="imageBoxLatest">
+                <img src="https://www.recordnepal.com/wp-content/uploads/2020/03/coronavirus-threatening-the-whole-world.jpeg" class="align-self-center mr-3" alt="" style="max-height:100%;max-width: 100%;">
+              </div>
+              <div class="media-body">
+                <h5 class="mt-0">Center-aligned media</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-12">
+            <h1>POPULAR <img src="img/arrow.png" style="margin-left:10px;display: inline;"/></h1>
+          </div>
+          <div class="col-md-4">
+            <div class="media">
+              <div class="imageBoxLatest">
+                <img src="https://www.recordnepal.com/wp-content/uploads/2020/03/coronavirus-threatening-the-whole-world.jpeg" class="align-self-center mr-3" alt="" style="max-height:100%;max-width: 100%;">
+              </div>
+              <div class="media-body">
+                <h5 class="mt-0">Center-aligned media</h5>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
