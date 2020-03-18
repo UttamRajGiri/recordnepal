@@ -1,0 +1,23 @@
+{
+  "name": "myapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "production": "NODE_ENV=production node ./bin/www"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "config": "^3.3.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "fs": "^0.0.1-security",
+    "helmet": "^3.21.3",
+    "http-errors": "~1.6.2",
+    "mongoose": "^5.9.2",
+    "morgan": "~1.9.0"
+  }
+}

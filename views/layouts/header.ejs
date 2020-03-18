@@ -1,0 +1,71 @@
+<!-- prettier-ignore -->
+<% 
+var metaInfo = {
+  title: "Home - The Record",
+  description:
+    "",
+  url: "",
+  image: "",
+  keywords:
+    " "
+};
+if(typeof meta!='undefined')
+  Object.assign(metaInfo, meta);
+if (metaInfo.addl_keywords) metaInfo.keywords = metaInfo.keywords + "," + metaInfo.addl_keywords;
+%>
+<title><%=metaInfo.title%></title>
+<!-- Global / universal meta tags -->
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<meta name="description" content="<%=metaInfo.description%>" />
+<meta name="keyword" content="<%=metaInfo.keywords%>" />
+<meta name="language" content="English" />
+<meta name="revisit-after" content="1 day" />
+<meta property="og:image" content="<%=metaInfo.image%>" />
+<meta property="og:title" content="<%=metaInfo.title%>" />
+<meta property="og:type" content="article" />
+<meta property="og:author" content="askbhunte" />
+<meta property="og:url" content="<%=metaInfo.url%>" />
+<meta property="og:description" content="<%=metaInfo.description%>" />
+<meta property="fb:app_id" content="2336751366393244" />
+<meta property="article:author" content="@askbhunte" />
+<meta content="@askbhunte" property="twitter:site" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@askbhunte" />
+<meta property="twitter:title" content="<%=metaInfo.title%>" />
+<meta name="twitter:creator" content="@askbhunte" />
+<meta property="twitter:image" content="<%=metaInfo.image%>" />
+<meta name="twitter:description" content="<%=metaInfo.description%>" />
+<meta name="twitter:creator" content="@askbhunte" />
+<meta name="twitter:url" content="<%=metaInfo.url%>" />
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="msapplication-TileImage" content="https://assets.rumsan.com/askbhunte/assets/ask-bhunte-white-logo.png" />
+<meta name="theme-color" content="#ffffff" />
+<meta name="robots" content="index, archive" />
+
+<link rel="shortcut icon" href="img/favicon.png" />
+<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+<link rel="stylesheet prefetch" href="/css/app.min.css" />
+<link rel="stylesheet" media="print" href="/css/print.min.css" />
+<link rel="stylesheet" href="/css/custom.css" />
+<!-- @prismcss@ -->
+
+<script src="/js/foresee-variables.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ST2GTN3CWQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-ST2GTN3CWQ");
+  const navigate = url => {
+    location.href = url;
+  };
+</script>

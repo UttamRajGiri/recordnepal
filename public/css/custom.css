@@ -1,0 +1,40 @@
+.card-title {
+  font-weight: 800;
+}
+#myVideo {
+  width: 100%;
+}
+.theme-blue .accordion .card-header {
+  border: none;
+}
+/* button[aria-expanded="true"] {
+  background-color: red;
+} */
+@media only screen and (max-width: 700px) {
+  #main-header-text {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    font-weight: 800;
+  }
+  #header-image {
+    height: 25px;
+    width: 25px;
+  }
+  #header-nepali {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  #corona-stats-box {
+    margin-top: 0% !important;
+  }
+}
+
+h3 {
+  margin-top: 12px;
+  font-weight: 800;
+  font-size: 24px;
+  font-family: "Open Sans", "Segoe UI", "Helvetica Neue", arial, sans-serif;
+}

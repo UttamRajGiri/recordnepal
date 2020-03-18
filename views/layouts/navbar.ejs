@@ -1,0 +1,88 @@
+<div class="container-fluid p-2">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <header class="navbar navbar-expand flex-column flex-md-row bd-navbar">
+          <a href="/"><img src="img/recordnepal-logo.png" class="img-fluid " style="max-height: 100px;"/></a>
+          <ul class="navbar-nav ml-md-auto d-none d-md-block">
+            <li class="nav-item">
+              <div class="mr-md-2" onclick="navigate('/live')" style="cursor:pointer">
+                <div style="font-weight: 800;letter-spacing: 0.5px;font-size:12px;text-align:right;">
+                  रोगलाग्नेको संख्या: <span style="font-weight:800;color:red"><%=corona_data.totalCases%><br /></span> मर्नेको संख्या:
+                  <span style="font-weight:800;color:red"><%=corona_data.totalDeaths%><br /></span> निकोहुनेको संख्या:
+                  <span style="font-weight:800;color:green;"><%=corona_data.totalRecovered%></span><br />
+                  मर्ने संभावना:
+                  <span style="font-weight:800;color:red"><%=((corona_data.totalDeaths/corona_data.totalCases)*100).toFixed(2)%>%</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </header>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid pl-3 pt-1 d-block d-md-none">
+  <div class="container" onclick="navigate('/live')" style="cursor:pointer">
+    <div class="row row-cols-2" style="font-size:14px;">
+      <div class="col">रोगलाग्नेको संख्या: <span style="color: blue;font-weight:800;"><%=corona_data.totalCases%></span></div>
+      <div class="col text-right">मर्नेको संख्या: <span style="color: red;font-weight:800;"><%=corona_data.totalDeaths%></span></div>
+    </div>
+    <div class="row row-cols-2" style="font-size:14px;">
+      <div class="col">निकोहुनेको संख्या: <span style="color: green;font-weight:800;"><%=corona_data.totalRecovered%></span></div>
+      <div class="col text-right">
+        मर्ने संभावना:
+        <span style="color: red;font-weight:800;"><%=((corona_data.totalDeaths/corona_data.totalCases)*100).toFixed(2)%>%</span>
+      </div>
+    </div>
+    <div class="row row-cols-3" style="font-size:14px;">
+      <div class="col">नेपाली लागेका: <span style="color: blue;font-weight:800;">५</span></div>
+      <div class="col"></div>
+      <div class="col text-right">
+        नेपाली मरेका:
+        <span style="color: red;font-weight:800;">0</span>
+      </div>
+    </div>
+  </div>
+  <div style="border-bottom: 1px solid #e5e6e7;height:10px;"></div>
+</div>
+
+<div class="container-fluid p-0">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <nav class="navbar navbar-expand-md  site-title yamm p-0">
+          <div id="navbar-collapse-grid" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav nav-justified w-100">
+              <li class="nav-item dropdown">
+                <a href="/" class="nav-link">EXPLAINERS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="/" class="nav-link">PODCASTS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="/" class="nav-link">LONGREADS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="/" class="nav-link">JOBS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="/" class="nav-link">FEATURES</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="/" class="nav-link">WEEKS IN POLITICS</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid p-0 d-block d-md-none">
+  <div class="row m-1 p-1 site-title text-center">
+    <div class="col"><a href="/">EXPLAINERS</a></div>
+  </div>
+</div>
