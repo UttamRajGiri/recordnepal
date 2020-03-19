@@ -128,3 +128,46 @@ a:hover {
   color: #e4a039;
   text-decoration: none;
 }
+.connectWithUs {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 17px;
+}
+
+.copyrightSection {
+  font-family: "Open Sans", arial, sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.footer-menu {
+  font-family: "khand";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.shareBtn {
+  display: block;
+  margin-bottom: 4px;
+  background-color: #005eaa;
+  border: none;
+  color: white;
+  padding: 7px 9px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.shareBtnTw {
+  background-color: #00acee;
+}
+.shareBtnIg {
+  background-color: #e4405f;
+}
+
+/* Darker background on mouse-over */
+.shareBtn:hover {
+  opacity: 0.7;
+}
