@@ -75,7 +75,25 @@
           </div>
           <!--explainers section body goes here contain feeds from array below-->
         </div>
-        <!--explainers section starts-->
+        <!--Explainers section starts-->
+        <hr />
+        <!--long reads section starts-->
+        <div class="row longreadsNews">
+          <div class="col-md-12">
+            <h1>LONGREADS<img src="img/arrow.png" style="margin-left:10px;display: inline;" /></h1>
+          </div>
+          <!--long reads section body goes here contain feeds from array below-->
+        </div>
+        <!--longreads section starts-->
+        <hr />
+        <!--long reads section starts-->
+        <div class="row featuresNews">
+          <div class="col-md-12">
+            <h1>FEATURES<img src="img/arrow.png" style="margin-left:10px;display: inline;" /></h1>
+          </div>
+          <!--long reads section body goes here contain feeds from array below-->
+        </div>
+        <!--longreads section starts-->
       </div>
     </div>
     <% include layouts/footer %>
@@ -139,6 +157,32 @@
 
       arr.forEach(el => {
         $(".explainerNews").append(`
+      <div class="col-md-3">
+      <div style="height: 192px;overflow: hidden;"><img src="${el.img_source}" style="width:100%;min-height:100%;" /></div>
+      <p class="newsCategory" style="margin-top:15px;">WEEK IN POLITICS</p>
+            <p class="readingTime">5 min read</p>
+                      <div class="explainerTitle"><a href="${el.news_link}">${el.news_title}</a></div>
+                      <img src="img/circle.svg" class=""/>
+                      <p class="author d-inline">${el.news_author}<span class="date">${el.news_date}</span></p>
+                      <p>How to fight an info-demic during an epidemic</p>
+                </div>
+                `);
+      });
+      arr.forEach(el => {
+        $(".longreadsNews").append(`
+      <div class="col-md-3">
+      <div style="height: 192px;overflow: hidden;"><img src="${el.img_source}" style="width:100%;min-height:100%;" /></div>
+      <p class="newsCategory" style="margin-top:15px;">WEEK IN POLITICS</p>
+            <p class="readingTime">5 min read</p>
+                      <div class="explainerTitle"><a href="${el.news_link}">${el.news_title}</a></div>
+                      <img src="img/circle.svg" class=""/>
+                      <p class="author d-inline">${el.news_author}<span class="date">${el.news_date}</span></p>
+                      <p>How to fight an info-demic during an epidemic</p>
+                </div>
+                `);
+      });
+      arr.forEach(el => {
+        $(".featuresNews").append(`
       <div class="col-md-3">
       <div style="height: 192px;overflow: hidden;"><img src="${el.img_source}" style="width:100%;min-height:100%;" /></div>
       <p class="newsCategory" style="margin-top:15px;">WEEK IN POLITICS</p>
