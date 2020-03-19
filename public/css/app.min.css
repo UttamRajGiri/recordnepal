@@ -13062,7 +13062,7 @@ table.table-striped tbody tr:nth-of-type(even) {
 }
 
 .theme-blue .site-title {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: #222222;
   color: #fff;
   border-bottom: 3px solid #e4a039;
 }

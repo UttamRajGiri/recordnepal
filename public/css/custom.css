@@ -140,6 +140,7 @@ a:hover {
   font-size: 17px;
   font-weight: 700;
   line-height: 17px;
+  color: white;
 }
 
 .copyrightSection {
@@ -147,13 +148,6 @@ a:hover {
   font-size: 12px;
   line-height: 20px;
   font-weight: 400;
-}
-
-.footer-menu {
-  font-family: "khand";
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 30px;
 }
 
 .shareBtn {
@@ -230,4 +224,17 @@ input[type="email"] {
   color: rgb(88, 89, 91);
   line-height: 26px;
   display: inline-grid;
+}
+
+.footer-menu {
+  font-family: "khand";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.footer-menu a {
+  color: white;
+}
+.footer-menu a:hover {
+  color: #e4a039;
 }
