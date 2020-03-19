@@ -26,44 +26,13 @@ router.use(async (req, res, next) => {
 });
 
 router.get("/", async (req, res, next) => {
-  let data = [];
-  try {
-    data = await CoronaController.list();
-  } catch (e) {
-    console.log(e);
-  }
-  let faqs = await FaqController.list({ limit: 16 });
-  let news = await NewsController.list({ limit: 3 });
-  let myths = await MythController.list({ limit: 4 });
-  faqs = faqs.data;
-  faqs = faqs.map(d => {
-    let { _id, type, question, answer, category, lang, image_url, question_np, answer_np } = d;
-    if (question_np && question_np.length > 10) question = question_np;
-    if (answer_np && answer_np.length > 5) answer = answer_np;
-    return {
-      _id,
-      type,
-      question,
-      answer,
-      category,
-      lang,
-      image_url
-    };
-  });
-  news = news.data;
-  myths = myths.data;
   res.render("index", {
-    // meta: {
-    //   image: "https://assets.rumsan.com/askbhunte/assets/coronavirus-myth-4b.jpg",
-    //   title: "काेराेना भाइरस सम्बन्धी जानकारी",
-    //   description:
-    //     "काेराेना भाइरस सम्बन्धी तथ्याँक, खबर, प्रश्न र उत्तर र कसरी बाँच्ने जानकारीहरु। Realtime information on Coronavirus in Nepal. Check for stats, news and learn how to protect yourself and the community around you against this novel virus."
-    // },
-    faqs,
-    news,
-    myths,
-    corona_data: req.corona_data,
-    data
+    corona_data: req.corona_data
+  });
+});
+router.get("/post", async (req, res, next) => {
+  res.render("single-post", {
+    corona_data: req.corona_data
   });
 });
 

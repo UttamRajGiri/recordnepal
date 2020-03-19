@@ -66,6 +66,13 @@ h1 {
   line-height: 35px;
   margin: 20px 0px;
 }
+.singlePostTitle {
+  font-family: "Vidaloka", serif;
+  color: rgb(35, 31, 32);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+}
 
 .newsCategory {
   font-family: "khand";
@@ -172,6 +179,19 @@ a:hover {
   opacity: 0.7;
 }
 
+.postShareBtn {
+  display: block;
+  margin-bottom: 4px;
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  font-size: 11px;
+  cursor: pointer;
+}
+.postShareBtn:hover {
+  opacity: 0.7;
+}
 .btn-custom {
   font-family: "Roboto", sans-serif;
   font-size: 13px;
@@ -196,4 +216,18 @@ input[type="email"] {
 ::placeholder {
   color: #e1e1e1 !important;
   font-size: 14px;
+}
+
+.imageCaption {
+  font-family: "khand";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.postContent {
+  font-size: 18px;
+  color: rgb(88, 89, 91);
+  line-height: 26px;
+  display: inline-grid;
 }
