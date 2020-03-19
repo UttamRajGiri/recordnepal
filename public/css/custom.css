@@ -39,7 +39,7 @@ h3 {
   font-family: "Open Sans", "Segoe UI", "Helvetica Neue", arial, sans-serif;
 }
 
-a {
+li {
   font-family: "Khand";
 }
 p {
@@ -64,6 +64,7 @@ h1 {
   font-weight: 400;
   font-size: 34px;
   line-height: 35px;
+  margin: 20px 0px;
 }
 
 .newsCategory {
@@ -90,4 +91,40 @@ h1 {
   font-family: "khand";
   font-size: 13px;
   font-weight: 400;
+}
+
+.latestTitle {
+  font-family: "Vidaloka", serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgb(35, 31, 32);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.popularTitle {
+  font-size: 19px;
+  font-family: "Vidaloka", serif;
+  color: rgb(17, 17, 17);
+  font-weight: 400;
+  line-height: 21px;
+  padding-top: 10px;
+  text-decoration: none;
+}
+.explainerTitle {
+  font-size: 19px;
+  font-family: "Vidaloka", serif;
+  color: rgb(17, 17, 17);
+  font-weight: 400;
+  line-height: 21px;
+  text-decoration: none;
+}
+
+a {
+  color: rgb(35, 31, 32);
+  text-decoration: none;
+}
+a:hover {
+  color: #e4a039;
+  text-decoration: none;
 }
