@@ -126,6 +126,10 @@ h1 {
   line-height: 21px;
   text-decoration: none;
 }
+.hideOverflowText {
+  max-height: 3em;
+  overflow: hidden;
+}
 
 a {
   color: rgb(35, 31, 32);
