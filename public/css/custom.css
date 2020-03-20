@@ -238,3 +238,28 @@ input[type="email"] {
 .footer-menu a:hover {
   color: #e4a039;
 }
+
+footer .footer-wrapper ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+footer .footer-wrapper ul.list-inline {
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+footer .footer-wrapper ul.list-inline li {
+  float: left;
+  margin-right: 10px;
+}
+
+footer .footer-wrapper ul.list-inline li img {
+  width: 24px;
+}
+
+footer .footer-wrapper ul.list-inline li.rounded-circle {
+  background-color: #fff;
+  padding: 7px;
+  margin-right: 7px;
+}
