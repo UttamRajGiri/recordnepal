@@ -263,3 +263,21 @@ footer .footer-wrapper ul.list-inline li.rounded-circle {
   padding: 7px;
   margin-right: 7px;
 }
+
+.navbar-border {
+  background-color: white;
+  border: 1px solid #d7d7d7;
+  border-right: none;
+  border-left: none;
+}
+.main-menu-styles {
+  font-family: "khand";
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  color: black;
+}
+.btn-outline-dark {
+  color: black;
+  border-color: #d7d7d7;
+}

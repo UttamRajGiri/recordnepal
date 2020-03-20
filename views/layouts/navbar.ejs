@@ -52,11 +52,22 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <nav class="navbar navbar-expand-md  site-title yamm p-0">
-          <div id="navbar-collapse-grid" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav w-100">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-border">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav main-menu-styles">
               <li class="nav-item dropdown">
-                <a href="/" class="nav-link">EXPLAINERS</a>
+                <a href="/" class="nav-link ">EXPLAINERS</a>
               </li>
               <li class="nav-item dropdown">
                 <a href="/" class="nav-link">PODCASTS</a>
@@ -73,24 +84,14 @@
               <li class="nav-item dropdown">
                 <a href="/" class="nav-link">WEEKS IN POLITICS</a>
               </li>
-              <li class="nav-item dropdown float-right">
-                <a href="/" class="nav-link">WEEKS IN POLITICS</a>
-              </li>
             </ul>
           </div>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2 d-none d-lg-block " type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+          </form>
         </nav>
       </div>
     </div>
-  </div>
-</div>
-
-<div class="container-fluid p-0 d-block d-md-none">
-  <div class="row m-1 p-1 site-title text-center">
-    <div class="col"><a href="/">EXPLAINERS</a></div>
-    <div class="col"><a href="/">PODCASTS</a></div>
-    <div class="col"><a href="/">LONGREADS</a></div>
-    <div class="col"><a href="/">JOBS</a></div>
-    <div class="col"><a href="/">FEATURES</a></div>
-    <div class="col"><a href="/">WEEKS IN POLITICS</a></div>
   </div>
 </div>
